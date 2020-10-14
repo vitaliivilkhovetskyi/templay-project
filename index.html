@@ -4,28 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Template Project</title>
+    <link rel="stylesheet" href="css/index.css"/>
 </head>
 <body>
-    <header class="all-header">
-        <div class="top-header">
-            <div class="logo">
-                <img class="logo-icon" src="img/logo.icon.png" alt="icon for logotype">
-                <h4 class="logo-text">BOOKSHOP</h4>
-            </div>
-            <div class="search-form">
-                <div class="form">
-                    <form class="form-input">
-                        <button><img class="logo-icon" src="img/search-icon.png" alt="icon for search"></button>
-                    </form>
+    <div class="container">
+        <header class="all-header">
+            <div class="top-header">
+                <div class="logo">
+                    <div class="icon">
+                        <img class="logo-icon" src="img/logo.icon.png" alt="icon for logotype">
+                    </div>
+                    <div class="logo-name">
+                        <p class="logo-text">BOOKSHOP</p>
+                    </div>
                 </div>
-                <div class="account-icon">
-                    <img class="logo-icon" src="img/account-icon.png" alt="icon for account">
+                <div class="search-form">
+                    <div class="form">
+                        <form class="form-inline">
+                            <button name="submit"><img class="search-icon" src="img/search-icon.png" alt="icon for search"></button>
+                            <input type="text" class="form-input" placeholder="Search">
+                        </form>
+                    </div>
+                </div>
+                <div class="account">
+                    <img class="account-icon" src="img/account-icon.png" alt="icon for account">
                 </div>
             </div>
-        </div>
-        <nav class="nav-bar">
-
-        </nav>
-    </header>
+            <nav class="nav-bar">
+                <a href="#">eBook Purchase</a>
+                <a href="#">eBook Preview</a>
+                <a href="#">Reviews</a>
+                <a href="#">Author</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+    </div>
 </body>
 </html>
