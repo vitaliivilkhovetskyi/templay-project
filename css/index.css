@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap');
+
 body {
- background-image: linear-gradient(-109deg, #1f3563 0%, #16062a 100%);
- color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(-109deg, #1f3563 0%, #16062a 100%);
+    color: #ffffff;
 }
+
 .container{
     max-width: 1080px;
     margin: auto;
 }
+
 .line{
     width: 1310px;
     height: 3px;
@@ -14,38 +19,47 @@ body {
     margin-top: 82px;
     margin-bottom: 82px;
 }
+
 .all-header{
     display: flex;
     flex-direction: column;
 }
+
 .top-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
 .logo {
     display: flex;
     align-items: center;
 }
+
 .logo-icon{
     width: 22px;
     height: 27px;
 }
+
 .form-inline{
     display: flex;
     width: 581px;
     height: 51px;
     border-radius: 25px;
     border: 1px solid #8e819e;
+    margin-left: -100px;
 }
+
 .search-icon{
     margin-left: 20px;
     border: none;
 }
+
 .search-btn{
     background: none;
     border: none;
 }
+
 .form-input{
     background: none;
     color: white;
@@ -54,29 +68,35 @@ body {
     height: 100%;
     width: 100%;
 }
+
 .form-inline .form-input {
     border-bottom: none;
     border: none;
 }
+
 .account{
     display: flex;
     align-items: center;
 }
+
 .account-icon{
     width: 23px;
     height: 24px;
 }
+
 .nav-bar{
     display: flex;
     justify-content: center;
     margin: 30px 0px;
 }
+
 .nav-bar a{
     text-decoration: none;
     padding: 15px;
     border: 1px solid transparent;
     color: #ffffff;
 }
+
 .nav-bar a:hover{
     border-bottom: 1px solid #1b8bcc;;
 }
@@ -86,10 +106,12 @@ body {
     justify-content: space-around;
     align-items: center;
 }
+
 .discount-text{
     position: relative;
     left: 109px;
 }
+
 .back-to-school{
     width: 208px;
     height: 16px;
@@ -97,6 +119,7 @@ body {
     font-size: 22px;
     font-weight: 400;
 }
+
 .special-off{
     width: 535px;
     height: 94px;
@@ -106,6 +129,7 @@ body {
     font-family: "Montserrat - Bold";
     margin-top: 26px;
 }
+
 .for-student{
     width: 535px;
     height: 94px;
@@ -115,6 +139,7 @@ body {
     font-weight: 300;
     padding-top: -15px;
 }
+
 .deal-btn{
     width: 280px;
     height: 59px;
@@ -122,6 +147,7 @@ body {
     background-color: #12608e;
     background-image: linear-gradient(88deg, rgba(0, 227, 160, 0.8) 0%, rgba(0, 227, 160, 0.8) 1%, rgba(26, 90, 176, 0.8) 100%);
 }
+
 .deal-text{
     width: 107px;
     height: 11px;
@@ -133,28 +159,33 @@ body {
     text-transform: uppercase;
 }
 
+.steps-to-get-book{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .easy-as-this{
     width: 291px;
     height: 35px;
     color: #ffffff;
-    font-family: Montserrat;
     font-size: 36px;
     font-weight: 700;
-    margin: auto;
+    margin-left: 55px;
+    margin-bottom: 35px;
 }
 
 .name-easy-steps{
     width: 618px;
     height: 18px;
     color: #8e819e;
-    font-family: Montserrat;
     font-size: 18px;
     font-weight: 300;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 35px;
     margin-bottom: 60px;
+    margin-left: 110px;
 }
+
 .easy-steps-to-get-book{
     display: flex;
     justify-content: space-around;
@@ -170,18 +201,21 @@ body {
     width: 210px;
     height: 313px;
     background-position: -117px -117px;
+    margin-left: 85px;
 }
 
 .sprite-layers-preview {
     width: 210px;
     height: 313px;
     background-position: -561px -117px;
+    margin-left: 85px;
 }
 
 .sprite-layers-purchase {
     width: 210px;
     height: 313px;
     background-position: -1005px -117px;
+    margin-left: 85px;
 }
 
 .sprite-layers-start {
@@ -189,11 +223,81 @@ body {
     height: 313px;
     background-position: -1449px -117px;
 }
+
 .deal-button{
     display: flex;
     justify-content: center;
+    margin-top: 77px;
 }
-.
+
+.eBook-preview{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.preview-title {
+    width: 294px;
+    height: 28px;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 700;
+    margin-left: 55px;
+}
+
+.preview-subtitle{
+    width: 346px;
+    height: 18px;
+    color: #8e819e;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: 55px;
+    margin-top: 34px;
+    margin-bottom: 59px;
+}
+
+.describe-of-block {
+    display: flex;
+    justify-content: flex-start;
+}
+.text-describe{
+    margin-left: -115px;
+}
+
+.sprites-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sprite-review {
+    background-image: url(../img/spritesheet-review.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-easy-read {
+    width: 471px;
+    height: 177px;
+    background-position: -47px -47px;
+    margin-top: 47px;
+}
+
+.sprite-organised {
+    width: 471px;
+    height: 177px;
+    background-position: -47px -318px;
+    margin-top: 47px;
+    margin-bottom: 40px;
+}
+
+.sprite-print {
+    width: 471px;
+    height: 177px;
+    background-position: -47px -589px;
+}
 
 
 
