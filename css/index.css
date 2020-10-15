@@ -132,6 +132,7 @@ body {
     text-align: center;
     text-transform: uppercase;
 }
+
 .easy-as-this{
     width: 291px;
     height: 35px;
@@ -139,13 +140,60 @@ body {
     font-family: Montserrat;
     font-size: 36px;
     font-weight: 700;
+    margin: auto;
 }
+
 .name-easy-steps{
     width: 618px;
-height: 18px;
-color: #8e819e;
-font-family: Montserrat;
-font-size: 18px;
-font-weight: 300;
+    height: 18px;
+    color: #8e819e;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+    margin-bottom: 60px;
 }
+.easy-steps-to-get-book{
+    display: flex;
+    justify-content: space-around;
+}
+
+.sprite {
+    background-image: url(../img/spritesheet-main.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-layers-format {
+    width: 210px;
+    height: 313px;
+    background-position: -117px -117px;
+}
+
+.sprite-layers-preview {
+    width: 210px;
+    height: 313px;
+    background-position: -561px -117px;
+}
+
+.sprite-layers-purchase {
+    width: 210px;
+    height: 313px;
+    background-position: -1005px -117px;
+}
+
+.sprite-layers-start {
+    width: 210px;
+    height: 313px;
+    background-position: -1449px -117px;
+}
+.deal-button{
+    display: flex;
+    justify-content: center;
+}
+.
+
+
 
