@@ -6,6 +6,14 @@ body {
     max-width: 1080px;
     margin: auto;
 }
+.line{
+    width: 1310px;
+    height: 3px;
+    background-color: #c2c2c2;
+    opacity: 0.05;
+    margin-top: 82px;
+    margin-bottom: 82px;
+}
 .all-header{
     display: flex;
     flex-direction: column;
@@ -73,9 +81,14 @@ body {
     border-bottom: 1px solid #1b8bcc;;
 }
 
-.discount{
+.get-the-deal{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+}
+.discount-text{
+    position: relative;
+    left: 109px;
 }
 .back-to-school{
     width: 208px;
@@ -91,6 +104,7 @@ body {
     font-weight: 700;
     color: #ffffff;
     font-family: "Montserrat - Bold";
+    margin-top: 26px;
 }
 .for-student{
     width: 535px;
@@ -99,6 +113,7 @@ body {
     font-family: Montserrat;
     font-size: 28px;
     font-weight: 300;
+    padding-top: -15px;
 }
 .deal-btn{
     width: 280px;
@@ -116,5 +131,21 @@ body {
     font-weight: 400;
     text-align: center;
     text-transform: uppercase;
+}
+.easy-as-this{
+    width: 291px;
+    height: 35px;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 700;
+}
+.name-easy-steps{
+    width: 618px;
+height: 18px;
+color: #8e819e;
+font-family: Montserrat;
+font-size: 18px;
+font-weight: 300;
 }
 
