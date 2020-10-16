@@ -188,40 +188,60 @@ body {
 
 .easy-steps-to-get-book{
     display: flex;
-    justify-content: space-around;
 }
 
 .sprite {
-    background-image: url(../img/spritesheet-main.png);
+    background-image: url(../img/easy-as-this.png);
     background-repeat: no-repeat;
     display: block;
 }
 
-.sprite-layers-format {
-    width: 210px;
-    height: 313px;
-    background-position: -117px -117px;
-    margin-left: 85px;
+.sprite-icon-book {
+    width: 204px;
+    height: 204px;
+    background-position: -123px -123px;
 }
 
-.sprite-layers-preview {
-    width: 210px;
-    height: 313px;
-    background-position: -561px -117px;
-    margin-left: 85px;
+.sprite-icon-calculator {
+    width: 302px;
+    height: 204px;
+    background-position: -573px -123px;
 }
 
-.sprite-layers-purchase {
-    width: 210px;
-    height: 313px;
-    background-position: -1005px -117px;
-    margin-left: 85px;
+.sprite-icon-comp {
+    width: 303px;
+    height: 204px;
+    background-position: -1121px -123px;
 }
 
-.sprite-layers-start {
-    width: 210px;
-    height: 313px;
-    background-position: -1449px -117px;
+.sprite-icon-hand {
+    width: 302px;
+    height: 204px;
+    background-position: -1670px -123px;
+}
+
+.subblock-name{
+    width: 131px;
+    height: 19px;
+    color: #ffffff;
+    font-family: "Montserrat - Semi Bold";
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 35px;
+    margin-bottom: 18px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+.subblock-text-info{
+    width: 190px;
+    height: 49px;
+    color: #847893;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 300;
+    margin-left: 22px;
+    text-align: center;
 }
 
 .deal-button{
@@ -260,8 +280,8 @@ body {
 
 .describe-of-block {
     display: flex;
-    justify-content: flex-start;
 }
+
 .text-describe{
     margin-left: -115px;
 }
@@ -272,31 +292,85 @@ body {
     justify-content: center;
 }
 
+.text-describe{
+    width: 380px;
+    height: auto;
+    padding: 29px; 
+    border: 43px solid #16062a; 
+    background: #13091f;
+    border-radius: 20px;
+}
+
+.describe-preview{
+    color: #847893;
+    font-family: "Montserrat";
+    font-size: 14px;
+}
+
+.chapter{
+    color: #b9acc9;
+    font-family: "Montserrat - Semi Bold";
+    font-size: 18px;
+    margin: 23px 0px;
+}
+
+.man{
+    width: 211px;
+    height: 325px;
+    margin-top: 382px;
+    margin-left: -100px;
+}
+
+.sprites-list{
+    margin-left: 60px;
+}
+
 .sprite-review {
     background-image: url(../img/spritesheet-review.png);
     background-repeat: no-repeat;
     display: block;
 }
 
-.sprite-easy-read {
-    width: 471px;
+.sprite-organised {
+    width: 177px;
     height: 177px;
     background-position: -47px -47px;
-    margin-top: 47px;
-}
-
-.sprite-organised {
-    width: 471px;
-    height: 177px;
-    background-position: -47px -318px;
-    margin-top: 47px;
-    margin-bottom: 40px;
 }
 
 .sprite-print {
-    width: 471px;
+    width: 177px;
+    height: 177px;
+    background-position: -47px -318px;
+}
+
+.sprite-read {
+    width: 177px;
     height: 177px;
     background-position: -47px -589px;
+    margin: 47px 0px;
+}
+
+.describe-for-sprates{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 44px;
+}
+
+.sprites-name{
+    color: #ffffff;
+    font-family: "Montserrat - Semi Bold";
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.sprites-info{
+    width: 250px;
+    height: 46px;
+    color: #847893;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 300;
 }
 
 
