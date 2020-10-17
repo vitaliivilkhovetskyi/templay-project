@@ -166,24 +166,18 @@ body {
 }
 
 .easy-as-this{
-    width: 291px;
-    height: 35px;
     color: #ffffff;
     font-size: 36px;
     font-weight: 700;
-    margin-left: 55px;
     margin-bottom: 35px;
 }
 
 .name-easy-steps{
-    width: 618px;
-    height: 18px;
     color: #8e819e;
     font-size: 18px;
     font-weight: 300;
     margin-top: 35px;
     margin-bottom: 60px;
-    margin-left: 110px;
 }
 
 .easy-steps-to-get-book{
@@ -257,23 +251,17 @@ body {
 }
 
 .preview-title {
-    width: 294px;
-    height: 28px;
     color: #ffffff;
     font-family: Montserrat;
     font-size: 36px;
     font-weight: 700;
-    margin-left: 55px;
 }
 
 .preview-subtitle{
-    width: 346px;
-    height: 18px;
     color: #8e819e;
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 300;
-    margin-left: 55px;
     margin-top: 34px;
     margin-bottom: 59px;
 }
@@ -372,6 +360,81 @@ body {
     font-size: 12px;
     font-weight: 300;
 }
+
+.clients-reviews{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.example-clients-reviews{
+    display: flex;
+    margin-bottom: 84px;
+}
+
+.andrei-review, .vitalii-review, .igor-review{
+    height: 410px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #152249;
+    background-image: linear-gradient(-109deg, #1f3563 0%, #16062a 100%);
+    margin: 10px;
+    padding: 26px 43px 20px 43px;
+}
+
+.name-client{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 12px;
+}
+
+.birthday-place {
+    color: #006699;
+    font-family: Montserrat;
+    font-size: 8px;
+    font-weight: 700;
+}
+
+.info-client {
+    height: 121px;
+    color: #847893;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 36px;
+    margin-bottom: 63px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.info-client::-webkit-scrollbar {
+    display: none;
+}
+
+.name-rate {
+    opacity: 0.32;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 8px;
+    font-weight: 400;
+}
+
+.rate {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.icon-social-network{
+    fill: white;
+    width: 24px;
+    height: 24px;
+}
+
+
 
 
 
