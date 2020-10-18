@@ -415,31 +415,148 @@ body {
     display: none;
 }
 
-.name-rate {
-    opacity: 0.32;
-    color: #ffffff;
-    font-family: Montserrat;
-    font-size: 8px;
-    font-weight: 400;
-}
-
-.rate {
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-.icon-social-network{
-    fill: white;
-    width: 24px;
-    height: 24px;
+.site-result{
+    height: 450px;
+    background-image: linear-gradient(-246deg, rgba(82, 235, 183, 0.73) 0%, rgba(26, 90, 176, 0.73) 77%, rgba(26, 90, 176, 0.73) 100%);
 }
 
 .site-result-info{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    padding-top: 125px;
 }
+
+.amount{
+    color: #ffffff;
+    font-family: "Montserrat - Semi Bold";
+    font-size: 100px;
+    font-weight: 400;
+}
+
+.sold-copies{
+    color: #fdfcff;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 22px;
+}
+
+.social-network-in-section{
+    display: flex;
+}
+
+.sprite-social-network {
+    background-image: url(../img/spritesheet-social-network.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-facebook-logo {
+    width: 24px;
+    height: 24px;
+    background-position: -47px -47px;
+    
+}
+
+.sprite-instagram-social-network-logo-of-photo-camera {
+    width: 24px;
+    height: 24px;
+    background-position: -165px -47px;
+    margin: 0px 8px;
+}
+
+.sprite-twitter-social-logotype {
+    width: 24px;
+    height: 24px;
+    background-position: -283px -47px;
+}
+
+.humand-and-books{
+    width: 500px;
+    height: 350px;
+    position: absolute;
+    top: 3470px;
+    left: 66.5%;
+}
+
+.buy-the-book {
+    display: flex;
+    margin-left: 30px;
+    margin-top: 120px;
+}
+
+.section-description {
+    width: 606px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+.quote{
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.text-from-book{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    color: #8e819e;
+    margin-top: 23px;
+    margin-bottom: 27px;
+}
+
+.author{
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 43px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-block-name{
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.contact-info{
+    display: flex;
+}
+
+.site-contacts{
+    text-align: right;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: 321px;
+}
+
+.input-email{
+    margin: 22px 0px;
+}
+
+
 
 
 
