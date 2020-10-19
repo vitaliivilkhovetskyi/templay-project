@@ -365,6 +365,13 @@ header{
     font-family: Montserrat;
     font-size: 12px;
     font-weight: 300;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.sprites-info::-webkit-scrollbar {
+    display: none;
 }
 
 .clients-reviews{
@@ -478,16 +485,20 @@ header{
     background-position: -283px -47px;
 }
 
-.humand-and-books{
+.section-background{
+    position: relative;
+    left: 46.6%;
+    margin-top: -250px;
+}
+
+.human-and-books{
     width: 500px;
     height: 350px;
-    position: absolute;
-    top: 3470px;
-    left: 66.5%;
 }
 
 .buy-the-book {
     display: flex;
+    justify-content: center;
     margin-left: 30px;
     margin-top: 120px;
 }
