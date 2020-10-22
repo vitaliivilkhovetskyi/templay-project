@@ -11,23 +11,25 @@
         <div class="container">
             <div class="account-info">
                 <div class="logo">
-                    <div class="icon">
-                        <img class="logo-icon" src="img/logo.icon.png" alt="icon for logotype">
-                    </div>
-                    <div class="logo-name">
-                        <p class="logo-text">BOOKSHOP</p>
-                    </div>
+                    <img class="logo-icon" src="img/logo.icon.png" alt="icon for logotype">
+                    <p>Bookshop</p>
                 </div>
-                <div class="search-form">
-                    <form class="form-inline">
-                        <button name="submit" class="search-btn"><img class="search-icon" src="img/search-icon.png" alt="icon for search"></button>
-                        <input type="text" class="form-input" placeholder="Search">
-                    </form>
-                </div>
+                <form action="#" method="POST" class="form-inline">
+                    <button name="submit" class="search-btn"><img class="search-icon" src="img/search-icon.png" alt="icon for search"></button>
+                    <input type="text" name="search" value="" class="form-input" placeholder="Search">
+                </form>
                 <div class="account">
-                    <img class="account-icon" src="img/account-icon.png" alt="icon for account">
+                    <a href="#"><img class="account-icon" src="img/account-icon.png" alt="icon for account"></a> 
                 </div>
             </div>
+            <label for="burger-icon">
+                <div class="container-burger" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </label>
+            <input type="checkbox" id="burger-checkbox">
             <nav class="nav-bar">
                 <a href="#">eBook Purchase</a>
                 <a href="#">eBook Preview</a>
@@ -44,40 +46,58 @@
                 <div class="special-off">SPECIAL 50% OFF</div>
                 <div class="for-student">For our student community</div>
                 <button type="submit" class="deal-btn"><span class="deal-text">GET THE DEAL</span></button>
-            </div>
-            <div class="discount-photo">
-                <img class="photo-of-human-and-books" src="img/layer.png" alt="books and human">
+                <img class="icon-deal" src="img/layer.png" alt="books and human">
             </div>
         </section>
     </div>
     <hr class="line">
     <div class="container">
-        <section class="steps-to-get-book">
-            <div class="easy-as-this">It's easy as this</div>
-            <div class="name-easy-steps">Four easy steps to get your new eBook. What are your waiting for?</div>
-            <div class="easy-steps-to-get-book">
-                <div class="eBook-preview-info">
-                    <i class="sprite sprite-icon-comp"></i>
+        <section class="get-book">
+            <div class="get-book__title">It's easy as this</div>
+            <div class="get-book__subtitle">Four easy steps to get your new eBook. What are your waiting for?</div>
+            <div class="get-book__steps">
+                <div class="get-book__preview">  
+                    <div class="get-book__background"> 
+                        <div class="get-book__list-background">
+                            <p>1</p>
+                        </div>
+                        <i class="get-book__sprite sprite-book"></i>
+                    </div>
                     <div class="subblock-name">eBook Preview</div>
                     <div class="subblock-text-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
                 </div>
-                <div class="eBook-purchase-info">
-                    <i class="sprite sprite-icon-calculator"></i>
+                <div class="get-book__purchase">
+                    <div class="get-book__background">
+                        <div class="get-book__list-background">
+                            <p>2</p>
+                        </div>
+                        <i class="get-book__sprite sprite-cash-register"></i>
+                    </div>
                     <div class="subblock-name"><p>Purchase eBook</p></div>
                     <div class="subblock-text-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
                 </div>
-                <div class="eBook-select-format-info">
-                    <i class="sprite sprite-icon-hand"></i>
+                <div class="get-book__format">
+                    <div class="get-book__background">
+                        <div class="get-book__list-background">
+                            <p>3</p>
+                        </div>
+                        <i class="get-book__sprite sprite-computer"></i>
+                    </div>
                     <div class="subblock-name">Select format</div>
                     <div class="subblock-text-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
                 </div>
-                <div class="eBook-readinf-info">
-                    <i class="sprite sprite-icon-book"></i>
+                <div class="get-book__reading">
+                    <div class="get-book__background">
+                        <div class="get-book__list-background">
+                            <p>4</p>
+                        </div>
+                        <i class="get-book__sprite sprite-support"></i>
+                    </div>
                     <div class="subblock-name">Start Reading</div>
                     <div class="subblock-text-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
                 </div> 
             </div>
-            <div class="deal-button">
+            <div class="get-book__button">
                 <button type="submit" class="deal-btn"><span class="deal-text">GET THE DEAL</span></button>
             </div>
         </section>
@@ -85,56 +105,56 @@
     <hr class="line">
     <div class="container">
         <section class="eBook-preview">
-            <div class="preview-title">eBook Preview</div>
-            <div class="preview-subtitle">This is how your new eBook will look.</div>
-            <div class="describe-of-block">
-                <div class="text-describe">
-                    <div class="describe-preview">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            <div class="eBook-preview__title">eBook Preview</div>
+            <div class="eBook-preview__subtitle">This is how your new eBook will look.</div>
+            <div class="eBook-preview__describe">
+                <div class="eBook-preview__text-describe">
+                    <div class="eBook-preview__describe-preview">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</div>
-                    <div class="chapter">Chapter IV</div>
-                    <div class="describe-preview">Duis sed odio sit amet nibh vulputate cursus a sit roin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+                    <div class="eBook-preview__chapter">Chapter IV</div>
+                    <div class="eBook-preview__describe-preview">
+                    <p>Duis sed odio sit amet nibh vulputate cursus a sit roin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
                     lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id eliton neque elit ed ut imperdiet nisi
                     massa sodales verbuctum etos. amet mauris morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare
                     odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia
-                    nostra, per inceptos himenaeos.
+                    nostra, per inceptos himenaeos.</p>
                     <p>Mauris in erat justo dullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet
                     nisi. Proin condimentum fermentum nunc setu retiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut
                     aliquam massa nisl quis neque. Suspendisse in orci enim. Tur adipiscing elit nam dui lacuam nec tellus a odio tincidunt
                     auctor a ornare odio. Sed non.Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat
                     auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p></div>
-                </div>
-                <div class="icon-man">
-                    <img class="man" src="img/man.png" alt="the man stay bag to us">
-                </div>
-                <div class="sprites-list">
-                    <i class="sprite-review sprite-print"></i>
-                    <i class="sprite-review sprite-read"></i>
-                    <i class="sprite-review sprite-organised"></i>
-                </div>
-                <div class="describe-for-sprates">
-                    <div class="print">
-                        <div class="sprites-name">Ready to print</div>
-                        <div class="sprites-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt.</div>
-                    </div>
-                    <div class="read">
-                        <div class="sprites-name">Easy to read</div>
-                        <div class="sprites-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt.</div>
-                    </div>
-                    <div class="organised">
-                        <div class="sprites-name">Well organised</div>
-                        <div class="sprites-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt.</div>
+                    <div class="eBook-preview__icon">
+                        <img class="preview-icon" src="img/man.png" alt="the man stay bag to us">
                     </div>
                 </div>
-              
+                <div class="eBook-preview__sprites-list">
+                    <div class="eBook-preview__sprites-icon">
+                        <i class="eBook-preview__sprite sprite-file"></i>
+                    </div>
+                    <div class="eBook-preview__sprites-icon">
+                        <i class="eBook-preview__sprite sprite-open-book"></i>
+                    </div>
+                    <div class="eBook-preview__sprites-icon">
+                        <i class="eBook-preview__sprite sprite-printer"></i>
+                    </div>
+                </div>
+                <div class="eBook-preview__sprites-describe">
+                    <div class="eBook-preview__text">
+                        <div class="eBook-preview__heading">Ready to print</div>
+                        <div class="eBook-preview__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt.</div>
+                    </div>
+                    <div class="eBook-preview__text">
+                        <div class="eBook-preview__heading">Easy to read</div>
+                        <div class="eBook-preview__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt.</div>
+                    </div>
+                    <div class="eBook-preview__text">
+                        <div class="eBook-preview__heading">Well organised</div>
+                        <div class="eBook-preview__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt.</div>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
@@ -242,26 +262,28 @@
             </div>
         </div>
     </section>
-    <section class="buy-the-book">
-        <div class="section-img">
-            <img class="buy-book-img" src="img/buy-book.png" alt="phone and people">
-        </div>
-        <div class="section-description">
-            <div class="quote">
-                “This book is a piece from heaven”
+    <div class="container">
+        <section class="buy-the-book">
+            <div class="section-img">
+                <img class="buy-book-img" src="img/buy-book.png" alt="phone and people">
             </div>
-            <div class="text-from-book">
-                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.”
+            <div class="section-description">
+                <div class="quote">
+                    “This book is a piece from heaven”
+                </div>
+                <div class="text-from-book">
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.”
+                </div>
+                <div class="author">
+                    Mark Jackson - Author 
+                </div>
+                <div class="buy-book-btn">
+                    <button type="submit" class="deal-btn"><span class="deal-text">BUY EBOOK</span></button>
+                </div>
             </div>
-            <div class="author">
-                Mark Jackson - Author
-            </div>
-            <div class="buy-book-btn">
-                <button type="submit" class="deal-btn"><span class="deal-text">BUY EBOOK</span></button>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
     <hr class="line">
     <div class="container">
         <section class="contact">
@@ -271,8 +293,8 @@
             <div class="contact-info">
                 <div class="site-contacts">
                     <div class="methods-of-communication">
-                        <p>Phone: 000-000-0000 <br>
-                        Email: your@example.com</p>
+                        <p><span class="phone">Phone:</span> 000-000-0000 <br>
+                        <span class="email">Email:</span> your@example.com</p>
                     </div>
                     <div class="location">
                         <p>1701 N. Charles Street Baltimore, MD 21202</p>
@@ -283,15 +305,13 @@
                     </div>
                 </div>
                 <div class="form">
-                    <form action="" class="input-form">
-                        <input class="input-name" type="text" placeholder="Name">
-                        <input class="input-email" type="text" placeholder="Email Address">
+                    <form action="#" method="GET" class="input-form">
+                        <input class="input-name" name="Name" value="" type="text" placeholder="Name">
+                        <input class="input-email" name="Email" value="" type="text" placeholder="Email Address">
                         <textarea class="input-comment" name="comment" cols="20" rows="5" placeholder="Message"></textarea>
+                        <button type="submit" class="deal-btn"><span class="deal-text">SEND MESSAGE</span></button>
                     </form>
                 </div>
-            </div>
-            <div class="contact-btn">
-                <button type="submit" class="deal-btn"><span class="deal-text">SEND MESSAGE</span></button>
             </div>
         </section>
     </div>
@@ -320,5 +340,6 @@
             </div>
         </div>
     </footer>
+    <script src="js/index.js"></script>
 </body>
 </html>

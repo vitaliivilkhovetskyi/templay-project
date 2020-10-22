@@ -1,4 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,*:before,*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,:active {
+  outline: none;
+}
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside, section {
+  display: block;
+}
+
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -7,19 +79,35 @@ body {
 }
 
 .container{
-    max-width: 1080px;
+    max-width: 1170px;
     margin: auto;
 }
 
+@media (max-width: 1200px){
+    .container{
+        max-width: 970px;
+    }
+}
+
+@media (max-width: 992px){
+    .container{
+        max-width: 750px;
+    }
+}
+@media (max-width: 767px){
+    .container{
+        max-width: none;
+    }
+}
 .line{
-    width: 1310px;
-    height: 3px;
+    max-width: 100%;
     background-color: #c2c2c2;
     opacity: 0.05;
     margin-top: 82px;
     margin-bottom: 82px;
 }
 
+/*style for header*/
 header{
     background-color: #18133a;
 }
@@ -34,22 +122,28 @@ header{
     align-items: center;
 }
 
+.logo p {
+    
+    font-size: 19px;
+    text-transform: uppercase;
+}
+
 .logo-icon{
-    width: 22px;
-    height: 27px;
+    width: 100%;
 }
 
 .form-inline{
     display: flex;
-    width: 581px;
+    position: relative;
+    left: -55px;
+    min-width: 581px;
     height: 51px;
     border-radius: 25px;
     border: 1px solid #8e819e;
-    margin-left: -100px;
 }
 
 .search-icon{
-    margin-left: 20px;
+    margin: 0px 20px;
     border: none;
 }
 
@@ -78,8 +172,7 @@ header{
 }
 
 .account-icon{
-    width: 23px;
-    height: 24px;
+    width: 100%;
 }
 
 .nav-bar{
@@ -87,10 +180,10 @@ header{
     justify-content: center;
     margin: 30px 0px;
     padding-bottom: 30px;
-
 }
 
 .nav-bar a{
+    font-size: 16px;
     text-decoration: none;
     padding: 15px;
     border: 1px solid transparent;
@@ -101,136 +194,222 @@ header{
     border-bottom: 1px solid #1b8bcc;;
 }
 
-.get-the-deal{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+/* burger menu*/
+#burger-checkbox{
+    display: none;
+}
+.container-burger{
+    display: none;
 }
 
+
+@media (max-width:767px){
+    .nav-bar {
+        display: none;
+    }
+    
+    .container-burger {
+        display: inline-block;
+        cursor: pointer;
+    }
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #ffffff;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    } 
+    
+    
+}
+
+
+
+
+/*styles for icon burger*/
+
+
+/*style for section "get-the-deal"*/
 .discount-text{
     position: relative;
-    left: 109px;
+    top: 140px;
 }
 
 .back-to-school{
-    width: 208px;
-    height: 16px;
+    position: relative;
     color: #75d1c6;
     font-size: 22px;
     font-weight: 400;
+    z-index: 1;
 }
 
 .special-off{
-    width: 535px;
-    height: 94px;
+    position: relative;
     font-size: 56px;
     font-weight: 700;
     color: #ffffff;
-    font-family: "Montserrat - Bold";
+    font-family: 'Montserrat - Bold';
     margin-top: 26px;
+    z-index: 1;
 }
 
 .for-student{
-    width: 535px;
-    height: 94px;
+    position: relative;
     color: #bbafca;
-    font-family: Montserrat;
+    font-weight: 300;
+    font-style: normal;
     font-size: 28px;
     font-weight: 300;
-    padding-top: -15px;
+    margin: 15px 0px 46px 0px;
+    z-index: 1;
 }
 
 .deal-btn{
-    width: 280px;
+    position: relative;
+    min-width: 280px;
     height: 59px;
     border-radius: 29px;
     background-color: #12608e;
     background-image: linear-gradient(88deg, rgba(0, 227, 160, 0.8) 0%, rgba(0, 227, 160, 0.8) 1%, rgba(26, 90, 176, 0.8) 100%);
     text-decoration: none;
     border: none;
+    z-index: 1;
 }
 
 .deal-btn:hover{
     border: none;
 }
 
-.deal-text{
-    width: 107px;
-    height: 11px;
+.deal-btn span{
     color: #ffffff;
-    font-family: Montserrat;
     font-size: 14px;
     font-weight: 400;
     text-align: center;
 }
 
-
-.steps-to-get-book{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.icon-deal{
+    max-width: 100%;
+    position: absolute;
+    right: -25px;
+    top: -130px;
+    z-index: 0;
 }
 
-.easy-as-this{
+/*styles for block "get__book"*/
+.get-book{
+    display: flex;
+    flex-direction: column;
+    margin-top: 400px;
+}
+
+.get-book__title{
     color: #ffffff;
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 35px;
+    text-align: center;
 }
 
-.name-easy-steps{
+.get-book__subtitle{
     color: #8e819e;
     font-size: 18px;
     font-weight: 300;
-    margin-top: 35px;
     margin-bottom: 60px;
+    text-align: center;
 }
 
-.easy-steps-to-get-book{
+.get-book__steps{
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.sprite {
-    background-image: url(../img/easy-as-this.png);
+.get-book__background{
+    width: 177px;
+    height: 177px;
+    background-color: #16062a;
+    border-radius: 50%;
+    position: relative;
+}
+
+.get-book__list-background{
+    width: 33px;
+    height: 33px;
+    background-color: #12608e;
+    border-radius: 50%;
+    position: relative;
+    left: 11%;
+    top: 11%;
+}
+
+.get-book__list-background p{
+    position: absolute;
+    left: 42%;
+    top: 30%;
+}
+
+.get-book__sprite {
+    background-image: url(../img/spritesheet-get-book.png);
     background-repeat: no-repeat;
     display: block;
+    position: absolute;
+    left: 54px;
+    top: 54px;
 }
 
-.sprite-icon-book {
-    width: 204px;
-    height: 204px;
-    background-position: -123px -123px;
+.sprite-book {
+    width: 70px;
+    height: 70px;
+    background-position: -229px -229px;
 }
 
-.sprite-icon-calculator {
-    width: 302px;
-    height: 204px;
-    background-position: -573px -123px;
+.sprite-cash-register {
+    width: 70px;
+    height: 70px;
+    background-position: -757px -229px;
 }
 
-.sprite-icon-comp {
-    width: 303px;
-    height: 204px;
-    background-position: -1121px -123px;
+.sprite-computer {
+    width: 69px;
+    height: 69px;
+    background-position: -1285px -229px;
 }
+
+.sprite-support {
+    width: 70px;
+    height: 70px;
+    background-position: -1812px -229px;
+}
+
 
 .sprite-icon-hand {
-    width: 302px;
+    max-width: 302px;
     height: 204px;
     background-position: -1670px -123px;
 }
 
 .subblock-name{
-    width: 131px;
-    height: 19px;
     color: #ffffff;
-    font-family: "Montserrat - Semi Bold";
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
-    font-weight: 400;
-    margin-top: 35px;
-    margin-bottom: 18px;
-    margin-left: 50px;
+    font-weight: 600;
     text-align: center;
+    margin-top: 35px;
+    margin-bottom: 17px;
 }
 
 .subblock-text-info{
@@ -240,40 +419,37 @@ header{
     font-family: Montserrat;
     font-size: 12px;
     font-weight: 300;
-    margin-left: 22px;
     text-align: center;
 }
 
-.deal-button{
-    display: flex;
-    justify-content: center;
+.get-book__button{
+    text-align: center;
     margin-top: 77px;
 }
 
+/*styles for preview*/
 .eBook-preview{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
 }
 
-.preview-title {
+.eBook-preview__title {
     color: #ffffff;
-    font-family: Montserrat;
     font-size: 36px;
     font-weight: 700;
 }
 
-.preview-subtitle{
+.eBook-preview__subtitle{
     color: #8e819e;
-    font-family: Montserrat;
     font-size: 18px;
     font-weight: 300;
     margin-top: 34px;
     margin-bottom: 59px;
 }
 
-.describe-of-block {
+.eBook-preview__describe {
     display: flex;
+    justify-content: space-around;
+    position: relative;
 }
 
 .text-describe{
@@ -286,94 +462,129 @@ header{
     justify-content: center;
 }
 
-.text-describe{
-    width: 380px;
+.eBook-preview__text-describe{
+    width: 474px;
     height: auto;
     padding: 29px; 
     border: 43px solid #16062a; 
     background: #13091f;
     border-radius: 20px;
+    position: relative;
+    text-align: start;
 }
 
-.describe-preview{
+.eBook-preview__describe-preview{
     color: #847893;
-    font-family: "Montserrat";
     font-size: 14px;
+    font-weight: 400;
 }
 
-.chapter{
+.eBook-preview__chapter{
     color: #b9acc9;
     font-family: "Montserrat - Semi Bold";
     font-size: 18px;
     margin: 23px 0px;
 }
 
-.man{
+.eBook-preview__icon{
     width: 211px;
     height: 325px;
-    margin-top: 382px;
-    margin-left: -100px;
+    position: absolute;
+    top: 60%;
+    left: 87%;
 }
 
-.sprites-list{
-    margin-left: 60px;
+.eBook-preview__sprites-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    left: 4%;
+    
 }
 
-.sprite-review {
+.eBook-preview__sprites-icon{
+    width: 177px;
+    height: 177px;
+    background-color: #16062a;
+    border-radius: 50%;
+    position: relative;
+}
+
+.sprite-file{
+    position: absolute;
+    left: 30%;
+    top: 26%;
+}
+
+.sprite-open-book{
+    position: absolute;
+    left: 26%;
+    top: 22%;
+}
+
+.sprite-printer{
+    position: absolute;
+    left: 26%;
+    top: 25%;
+}
+
+.eBook-preview__sprite {
     background-image: url(../img/spritesheet-review.png);
     background-repeat: no-repeat;
     display: block;
 }
 
-.sprite-organised {
-    width: 177px;
-    height: 177px;
-    background-position: -47px -47px;
+.sprite-file {
+    width: 70px;
+    height: 88px;
+    background-position: -139px -139px;
 }
 
-.sprite-print {
-    width: 177px;
-    height: 177px;
-    background-position: -47px -318px;
+.sprite-open-book {
+    width: 86px;
+    height: 86px;
+    background-position: -139px -505px;
 }
 
-.sprite-read {
-    width: 177px;
-    height: 177px;
-    background-position: -47px -589px;
-    margin: 47px 0px;
+.sprite-printer {
+    width: 85px;
+    height: 85px;
+    background-position: -139px -869px;
 }
 
-.describe-for-sprates{
+
+.eBook-preview__sprites-describe{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-left: 44px;
 }
 
-.sprites-name{
+.eBook-preview__heading{
     color: #ffffff;
     font-family: "Montserrat - Semi Bold";
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 600;
+    text-align: start;
 }
 
-.sprites-info{
+.eBook-preview__description{
     width: 250px;
     height: 46px;
     color: #847893;
-    font-family: Montserrat;
     font-size: 12px;
     font-weight: 300;
-    position: relative;
     overflow-x: hidden;
     overflow-y: scroll;
+    text-align: start;
+    margin-top: 13px;
 }
 
-.sprites-info::-webkit-scrollbar {
+.eBook-preview__description::-webkit-scrollbar {
     display: none;
 }
 
+/*styles for clients reviews*/
 .clients-reviews{
     display: flex;
     flex-direction: column;
@@ -564,6 +775,9 @@ header{
     margin-left: -35px;
 }
 
+.phone, .email{
+    color: blue;
+}
 .location{
     margin-top: 24px;
     margin-bottom: 30px;
@@ -615,6 +829,7 @@ input::placeholder {
     color: white;
     font-size: 16px;
 }
+
 textarea::placeholder { 
     color: white; 
     font-size: 18px;
