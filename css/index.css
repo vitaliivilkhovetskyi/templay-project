@@ -83,30 +83,6 @@ body {
     margin: auto;
 }
 
-@media (max-width: 1200px){
-    .container{
-        max-width: 970px;
-    }
-}
-
-@media (max-width: 992px){
-    .container{
-        max-width: 750px;
-    }
-}
-@media (max-width: 767px){
-    .container{
-        max-width: none;
-    }
-}
-.line{
-    max-width: 100%;
-    background-color: #c2c2c2;
-    opacity: 0.05;
-    margin-top: 82px;
-    margin-bottom: 82px;
-}
-
 /*style for header*/
 header{
     background-color: #18133a;
@@ -591,13 +567,27 @@ header{
     align-items: center;
 }
 
-.example-clients-reviews{
+.clients-reviews__title{
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.clients-reviews__subtitle{
+    color: #8e819e;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 34px;
+    margin-bottom: 60px;
+}
+
+.clients-reviews__example{
     display: flex;
     margin-bottom: 84px;
 }
 
-.andrei-review, .vitalii-review, .igor-review{
-    height: 410px;
+.clients-reviews__andrei, .clients-reviews__vitalii, .clients-reviews__igor{
+    min-height: 450px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -607,58 +597,65 @@ header{
     padding: 26px 43px 20px 43px;
 }
 
-.name-client{
+.clients-reviews__name{
     color: #ffffff;
+    font-family: "Montserrat - Semi Bold";
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 600;
+    text-transform: uppercase;
     margin-top: 15px;
     margin-bottom: 12px;
 }
 
-.birthday-place {
+.clients-reviews__birthday-place {
     color: #006699;
-    font-family: Montserrat;
     font-size: 8px;
     font-weight: 700;
 }
 
-.info-client {
-    height: 121px;
+.clients-reviews__info {
+    max-height: 151px;
     color: #847893;
-    font-family: Montserrat;
     font-size: 12px;
     font-weight: 400;
     margin-top: 36px;
     margin-bottom: 63px;
+    letter-spacing: 1.2px;
+    line-height: 18px;
     position: relative;
     overflow-x: hidden;
     overflow-y: scroll;
 }
 
-.info-client::-webkit-scrollbar {
+.clients-reviews__info::-webkit-scrollbar {
     display: none;
 }
 
-.site-result{
+.clients-reviews__name-rate{
+    margin-bottom: 4px;
+}
+
+/*styles for section result*/
+.result{
     height: 450px;
     background-image: linear-gradient(-246deg, rgba(82, 235, 183, 0.73) 0%, rgba(26, 90, 176, 0.73) 77%, rgba(26, 90, 176, 0.73) 100%);
 }
 
-.site-result-info{
+.result__info{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 125px;
 }
 
-.amount{
+.result__amount{
     color: #ffffff;
     font-family: "Montserrat - Semi Bold";
     font-size: 100px;
     font-weight: 400;
 }
 
-.sold-copies{
+.result__sold-copies{
     color: #fdfcff;
     font-family: Montserrat;
     font-size: 18px;
@@ -666,7 +663,7 @@ header{
     margin-bottom: 22px;
 }
 
-.social-network-in-section{
+.result__social-network{
     display: flex;
 }
 
@@ -696,43 +693,43 @@ header{
     background-position: -283px -47px;
 }
 
-.section-background{
+.result__background{
     position: relative;
     left: 46.6%;
     margin-top: -250px;
 }
 
-.human-and-books{
-    width: 500px;
-    height: 350px;
+.result__icon{
+    max-width: 502px;
 }
+/*styles for buy-book*/
 
-.buy-the-book {
+.buy-book {
     display: flex;
     justify-content: center;
-    margin-left: 30px;
     margin-top: 120px;
+    position: relative;
 }
 
-.section-description {
-    width: 606px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.buy-book__icon{
+    position: relative;
+    left: -120px;
+}
+
+.buy-book__description {
+    min-width: 606px;
+    position: relative;
+    top: 130px;
     text-align: center;
-    justify-content: center;
-    margin-left: 100px;
 }
 
-.quote{
+.buy-book__quote{
     color: #ffffff;
-    font-family: Montserrat;
     font-size: 30px;
     font-weight: 700;
 }
 
-.text-from-book{
-    font-family: Montserrat;
+.buy-book__text{
     font-size: 16px;
     font-weight: 400;
     color: #8e819e;
@@ -740,58 +737,66 @@ header{
     margin-bottom: 27px;
 }
 
-.author{
+.buy-book__author{
     color: #ffffff;
-    font-family: Montserrat;
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 43px;
 }
 
-.contact{
+/*styles for contacts*/
+.contacts{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.contact-block-name{
+.contacts__name{
     color: #ffffff;
-    font-family: Montserrat;
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 45px;
 }
 
-.contact-info{
+.contacts__info{
     display: flex;
+    position: relative;
 }
 
-.site-contacts{
+.contacts__description{
     text-align: right;
     color: #ffffff;
-    font-family: Montserrat;
     font-size: 18px;
     font-weight: 400;
-    margin-left: -35px;
+    position: relative;
+    left: -50px;
+}
+
+.contacts__communication{
+    line-height: 34.1px;
 }
 
 .phone, .email{
     color: blue;
 }
-.location{
+.contacts__location{
     margin-top: 24px;
     margin-bottom: 30px;
 }
 
-.input-form {
+.contacts__work-schedule{
+    line-height: 23.68px;
+}
+
+.contacts__input-form {
     display: flex;
     flex-direction: column;
     justify-self: center;
-    width: 321px;
-    margin-left: 35px;
+    position: relative;
+    left: 35px;
 }
 
-.input-name{
+.contacts__input-name{
     width: 371px;
     height: 48px;
     border-radius: 4px;
@@ -802,7 +807,7 @@ header{
     padding-top: 3px;
 }
 
-.input-email{
+.contacts__input-email{
     width: 371px;
     height: 48px;
     border-radius: 4px;
@@ -814,7 +819,7 @@ header{
     padding-top: 3px;
 }
 
-.input-comment{
+.contacts__input-comment{
     width: 371px;
     border-radius: 4px;
     border: 1px solid #e6e6e6;
@@ -835,37 +840,35 @@ textarea::placeholder {
     font-size: 18px;
 }
 
-.contact-btn{
-    margin-left: 330px;
-}
-
+/* styles for footer*/
 footer{
     background-color: #18133a;
     margin-top: 54px;
 }
 
-.footer-navigation{
+.footer__nav{
     display: flex;
     justify-content: space-between;
     padding-top: 57px;
 }
 
-.footer-logo{
+.footer__logo{
     display: flex;
     align-items: center;
     opacity: 0.6;
 }
 
-.footer-logo-text{
+.footer__logo-text{
     font-size: 20px;
 }
 
-.footer-nav-bar{
+.footer__nav-bar{
     display: flex;
     align-items: center;
+    font-family: "Poppins", sans-serif;
 }
 
-.footer-nav-bar a{
+.footer__nav-bar a{
     text-decoration: none;
     padding: 15px;
     border: 1px solid transparent;
@@ -873,7 +876,7 @@ footer{
     opacity: 0.3;
 }
 
-.footer-social-networks{
+.footer__social-networks{
     display: flex;
     align-items: center;
     opacity: 0.6;
@@ -907,7 +910,7 @@ footer{
     margin: 0px 22px;
 }
 
-.footer-copyright{
+.footer__copyright{
     text-align: center;
     margin-top: 63px;
     padding-bottom: 47px;
