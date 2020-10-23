@@ -83,6 +83,14 @@ body {
     margin: auto;
 }
 
+.line{
+    height: 3px;
+    background-color: #c2c2c2;
+    opacity: 0.05;
+    margin-top: 82px;
+    margin-bottom: 82px;
+}
+
 /*style for header*/
 header{
     background-color: #18133a;
@@ -220,6 +228,10 @@ header{
 
 
 /*style for section "get-the-deal"*/
+.get-the-deal{
+    margin-bottom: -100px;
+}
+
 .discount-text{
     position: relative;
     top: 140px;
@@ -279,9 +291,9 @@ header{
 
 .icon-deal{
     max-width: 100%;
-    position: absolute;
-    right: -25px;
-    top: -130px;
+    position: relative;
+    left: 150px;
+    top: -320px;
     z-index: 0;
 }
 
@@ -289,7 +301,6 @@ header{
 .get-book{
     display: flex;
     flex-direction: column;
-    margin-top: 400px;
 }
 
 .get-book__title{
