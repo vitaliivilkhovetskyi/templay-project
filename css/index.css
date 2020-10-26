@@ -177,16 +177,11 @@ header{
 #burger-checkbox{
     display: none;
 }
-.header__container-burger{
-    display: none;
-}
-
 
 @media (max-width:767px){
-    .header__nav-bar {
+    .header__nav-bar{
         display: none;
-    }
-    
+    }   
     .header__container-burger {
         display: inline-block;
         cursor: pointer;
@@ -212,7 +207,14 @@ header{
         -webkit-transform: rotate(45deg) translate(-8px, -8px);
         transform: rotate(45deg) translate(-8px, -8px);
     }  
+    
+    .header input:checked ~ .header__nav-bar {
+    display: flex;
+    flex-direction: column;
+    }
 }
+
+
 
 /*get-deal*/
 .get-deal{
