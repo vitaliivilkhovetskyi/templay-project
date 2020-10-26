@@ -62,12 +62,7 @@ ul li {
 img {
   vertical-align: top;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
   font-size: inherit;
   font-weight: 400;
 }
@@ -91,32 +86,32 @@ body {
     margin-bottom: 82px;
 }
 
-/*style for header*/
+/*header*/
 header{
     background-color: #18133a;
 }
 
-.account-info {
+.header__account-info {
     display: flex;
     justify-content: space-between;
 }
 
-.logo {
+.header__logo {
     display: flex;
     align-items: center;
 }
 
-.logo p {
+.header__logo p {
     
     font-size: 19px;
     text-transform: uppercase;
 }
 
-.logo-icon{
+.header__logo-icon{
     width: 100%;
 }
 
-.form-inline{
+.header__form-inline{
     display: flex;
     position: relative;
     left: -55px;
@@ -126,17 +121,17 @@ header{
     border: 1px solid #8e819e;
 }
 
-.search-icon{
+.header__search-icon{
     margin: 0px 20px;
     border: none;
 }
 
-.search-btn{
+.header__search-btn{
     background: none;
     border: none;
 }
 
-.form-input{
+.header__form-input{
     background: none;
     color: white;
     border: none;
@@ -145,28 +140,28 @@ header{
     width: 100%;
 }
 
-.form-inline .form-input {
+.header__form-inline .header__form-input {
     border-bottom: none;
     border: none;
 }
 
-.account{
+.header__account{
     display: flex;
     align-items: center;
 }
 
-.account-icon{
+.header__account-icon{
     width: 100%;
 }
 
-.nav-bar{
+.header__nav-bar{
     display: flex;
     justify-content: center;
     margin: 30px 0px;
     padding-bottom: 30px;
 }
 
-.nav-bar a{
+.header__nav-bar a{
     font-size: 16px;
     text-decoration: none;
     padding: 15px;
@@ -174,7 +169,7 @@ header{
     color: #ffffff;
 }
 
-.nav-bar a:hover{
+.header__nav-bar a:hover{
     border-bottom: 1px solid #1b8bcc;;
 }
 
@@ -182,21 +177,21 @@ header{
 #burger-checkbox{
     display: none;
 }
-.container-burger{
+.header__container-burger{
     display: none;
 }
 
 
 @media (max-width:767px){
-    .nav-bar {
+    .header__nav-bar {
         display: none;
     }
     
-    .container-burger {
+    .header__container-burger {
         display: inline-block;
         cursor: pointer;
     }
-    .bar1, .bar2, .bar3 {
+    .header__bar1, .header__bar2, .header__bar3 {
         width: 35px;
         height: 5px;
         background-color: #ffffff;
@@ -204,34 +199,32 @@ header{
         transition: 0.4s;
     }
 
-    .change .bar1 {
+    .change .header__bar1 {
         -webkit-transform: rotate(-45deg) translate(-9px, 6px);
         transform: rotate(-45deg) translate(-9px, 6px);
     }
 
-    .change .bar2 {
+    .change .header__bar2 {
         opacity: 0;
     }
 
-    .change .bar3 {
+    .change .header__bar3 {
         -webkit-transform: rotate(45deg) translate(-8px, -8px);
         transform: rotate(45deg) translate(-8px, -8px);
-    } 
-    
-    
+    }  
 }
 
-/*style for section "get-the-deal"*/
-.get-the-deal{
+/*get-deal*/
+.get-deal{
     margin-bottom: -100px;
 }
 
-.discount-text{
+.get-deal__info{
     position: relative;
     top: 140px;
 }
 
-.back-to-school{
+.get-deal__title{
     position: relative;
     color: #75d1c6;
     font-size: 22px;
@@ -239,7 +232,7 @@ header{
     z-index: 1;
 }
 
-.special-off{
+.get-deal__subtitle{
     position: relative;
     font-size: 56px;
     font-weight: 700;
@@ -249,7 +242,7 @@ header{
     z-index: 1;
 }
 
-.for-student{
+.get-deal__text{
     position: relative;
     color: #bbafca;
     font-weight: 300;
@@ -286,7 +279,7 @@ header{
     text-align: center;
 }
 
-.icon-deal{
+.get-deal__icon{
     max-width: 100%;
     position: relative;
     left: 150px;
@@ -294,7 +287,7 @@ header{
     z-index: 0;
 }
 
-/*styles for block "get__book"*/
+/*get__book*/
 .get-book{
     display: flex;
     flex-direction: column;
@@ -411,7 +404,7 @@ header{
     margin-top: 77px;
 }
 
-/*styles for preview*/
+/*eBook-preview*/
 .eBook-preview{
     text-align: center;
 }
@@ -568,13 +561,13 @@ header{
     display: none;
 }
 
-/*styles for clients reviews*/
-
+/*clients-reviews*/
 
 .clients-reviews__title{
     color: #ffffff;
     font-size: 36px;
     font-weight: 700;
+    text-align: center;
 }
 
 .clients-reviews__subtitle{
@@ -583,53 +576,23 @@ header{
     font-weight: 300;
     margin-top: 34px;
     margin-bottom: 60px;
+    text-align: center;
 }
 
 .clients-reviews__example{
     margin-bottom: 84px;
 }
 
-/*slider*/
-/* Слайдер */
-.slick-slider{}
-/* Слайдер запущен */
-.slick-slider.slick-initialized{}
-/* Слайдер с точками */
-.slick-slider.slick-dotted{}
-/* Ограничивающая оболочка */
+/* slider */
+
 .slick-list {
     overflow: hidden;
 }
-/* Лента слайдов */
+
 .slick-track{
     display: flex;
     align-items: flex-start;
 }
-/* Слайд */
-.slick-slide{}
-/* Слайд активный (показывается) */
-.slick-slide.slick-active{}
-/* Слайд основной */
-.slick-slide.slick-current{}
-/* Слайд по центру */
-.slick-slide.slick-center{}
-/* Клонированный слайд */
-.slick-slide.slick-cloned{}
-/* Стрелка */
-.slick-arrow{}
-/* Стрелка влево */
-.slick-arrow.slick-prev{}
-/* Стрелка вправо */
-.slick-arrow.slick-next{}
-/* Стрелка не активная */
-.slick-arrow.slick-disabled{}
-/* Точки (булиты) */
-.slick-dots{}
-.slick-dots li{}
-/* Активная точка */
-.slick-dots li.slick-active{}
-/* Элемент точки */
-.slick-dots li button{}
 
 .slider{
     position: relative;
@@ -647,19 +610,23 @@ header{
     left: 0;
     background: url("../img/left-arrow.png") 0 0 / 100% no-repeat;
 }
+
 .slider .slick-arrow.slick-next{
     right: 0;
     background: url("../img/next.png") 0 0 / 100% no-repeat;
 }
+
 .slider .slick-dots{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .slider .slick-dots li{
     list-style: none;
     margin: 0px 10px;
 }
+
 .slider .slick-dots button{
     font-size: 0;
     width: 10px;
@@ -668,18 +635,19 @@ header{
     border-radius: 50%;
 }
 
-.slider__item{}
-/*end slider*/
+.slider__item{
+    margin: 0px 20px;
+}
 
-
+/*slider content*/
 .clients-reviews__andrei, .clients-reviews__vitalii, .clients-reviews__igor, .clients-reviews__vasya {
     min-height: 450px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
     background-color: #152249;
     background-image: linear-gradient(-109deg, #1f3563 0%, #16062a 100%);
-    margin: 10px;
+    margin: 0px;
     padding: 26px 43px 20px 43px;
 }
 
@@ -721,7 +689,7 @@ header{
     margin-bottom: 4px;
 }
 
-/*styles for section result*/
+/*result*/
 .result{
     height: 450px;
     background-image: linear-gradient(-246deg, rgba(82, 235, 183, 0.73) 0%, rgba(26, 90, 176, 0.73) 77%, rgba(26, 90, 176, 0.73) 100%);
@@ -788,7 +756,8 @@ header{
 .result__icon{
     max-width: 502px;
 }
-/*styles for buy-book*/
+
+/*buy-book*/
 
 .buy-book {
     display: flex;
@@ -830,7 +799,8 @@ header{
     margin-bottom: 43px;
 }
 
-/*styles for contacts*/
+/*contacts*/
+
 .contacts{
     display: flex;
     flex-direction: column;
@@ -865,6 +835,7 @@ header{
 .phone, .email{
     color: blue;
 }
+
 .contacts__location{
     margin-top: 24px;
     margin-bottom: 30px;
@@ -926,7 +897,8 @@ textarea::placeholder {
     font-size: 18px;
 }
 
-/* styles for footer*/
+/*footer*/
+
 footer{
     background-color: #18133a;
     margin-top: 54px;
@@ -960,6 +932,10 @@ footer{
     border: 1px solid transparent;
     color: #ffffff;
     opacity: 0.3;
+}
+
+.footer__nav-bar a:hover{
+    opacity: 1;
 }
 
 .footer__social-networks{

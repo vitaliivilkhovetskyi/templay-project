@@ -8,30 +8,31 @@
     <link rel="stylesheet" href="css/index.css"/>
 </head>
 <body>
-    <header>
+
+    <header class="header">
         <div class="container">
-            <div class="account-info">
-                <div class="logo">
-                    <img class="logo-icon" src="img/logo.icon.png" alt="icon for logotype">
+            <div class="header__account-info">
+                <div class="header__logo">
+                    <img class="header__logo-icon" src="img/logo.icon.png" alt="icon for logotype">
                     <p>Bookshop</p>
                 </div>
-                <form action="#" method="POST" class="form-inline">
-                    <button name="submit" class="search-btn"><img class="search-icon" src="img/search-icon.png" alt="icon for search"></button>
-                    <input type="text" name="search" value="" class="form-input" placeholder="Search">
+                <form action="#" method="POST" class="header__form-inline">
+                    <button name="submit" class="header__search-btn"><img class="header__search-icon" src="img/search-icon.png" alt="icon for search"></button>
+                    <input type="text" name="search" value="" class="header__form-input" placeholder="Search">
                 </form>
-                <div class="account">
-                    <a href="#"><img class="account-icon" src="img/account-icon.png" alt="icon for account"></a> 
+                <div class="header__account">
+                    <a href="#"><img class="header__account-icon" src="img/account-icon.png" alt="icon for account"></a> 
                 </div>
             </div>
-            <label for="burger-icon">
-                <div class="container-burger" onclick="myFunction(this)">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
+            <label for="header__burger-icon">
+                <div class="header__container-burger" onclick="myFunction(this)">
+                    <div class="header__bar1"></div>
+                    <div class="header__bar2"></div>
+                    <div class="header__bar3"></div>
                 </div>
             </label>
             <input type="checkbox" id="burger-checkbox">
-            <nav class="nav-bar">
+            <nav class="header__nav-bar">
                 <a href="#">eBook Purchase</a>
                 <a href="#">eBook Preview</a>
                 <a href="#">Reviews</a>
@@ -39,21 +40,22 @@
                 <a href="#">Contact</a>
             </nav>
         </div>
-    </header>                 
-    <div class="container">
-        <section class="get-the-deal">        
-            <div class="discount-text">
-                <div class="back-to-school wow slideInLeft" data-wow-duration="1s">BACK TO SCHOOL</div>
-                <div class="special-off wow slideInLeft" data-wow-duration="1s">SPECIAL 50% OFF</div>
-                <div class="for-student wow slideInLeft" data-wow-duration="1s">For our student community</div>
+    </header>
+
+    <section class="get-deal">
+        <div class="container">    
+            <div class="get-deal__info">
+                <div class="get-deal__title wow slideInLeft" data-wow-duration="1s">BACK TO SCHOOL</div>
+                <div class="get-deal__subtitle wow slideInLeft" data-wow-duration="1s">SPECIAL 50% OFF</div>
+                <div class="get-deal__text wow slideInLeft" data-wow-duration="1s">For our student community</div>
                 <button type="submit" class="deal-btn wow slideInLeft" data-wow-duration="1s"><span class="deal-text">GET THE DEAL</span></button>
-                <img class="icon-deal wow slideInRight" data-wow-duration="1s" src="img/layer.png" alt="books and human">
+                <img class="get-deal__icon wow slideInRight" data-wow-duration="1s" src="img/layer.png" alt="books and human">
             </div>
-        </section>
         </div>
-    </div>
+    </section>
 
     <hr class="line">
+
     <div class="container">
         <section class="get-book">
             <div class="get-book__title">It's easy as this</div>
@@ -105,7 +107,9 @@
             </div>
         </section>
     </div>
+
     <hr class="line">
+
     <div class="container">
         <section class="eBook-preview">
             <div class="eBook-preview__title">eBook Preview</div>
@@ -161,7 +165,9 @@
             </div>
         </section>
     </div>
+
     <hr class="line">
+
     <div class="container">
         <section class="clients-reviews">
             <div class="clients-reviews__title">Clients Reviews</div>
@@ -283,6 +289,7 @@
             </div>
         </section>
     </div>
+
     <section class="result">
         <div class="result__info container">
             <div class="result__amount">12.000+</div>
@@ -297,6 +304,7 @@
             </div>
         </div>
     </section>
+
     <div class="container">
         <section class="buy-book">
             <div class="buy-book__icon wow slideInLeft" data-wow-duration="1s">
@@ -319,7 +327,9 @@
             </div>
         </section>
     </div>
+
     <hr class="line">
+
     <div class="container">
         <section class="contacts">
             <div class="contacts__name">
@@ -350,7 +360,8 @@
             </div>
         </section>
     </div>
-    <footer>
+
+    <footer class="footer">
         <div class="container">
             <div class="footer__nav">
                 <div class="footer__logo ">
