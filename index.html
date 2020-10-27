@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Template Project</title>
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/null.css"/>
     <link rel="stylesheet" href="css/index.css"/>
 </head>
 <body>
@@ -16,10 +17,12 @@
                     <img class="header__logo-icon" src="img/logo.icon.png" alt="icon for logotype">
                     <p>Bookshop</p>
                 </div>
-                <form action="#" method="POST" class="header__form-inline">
-                    <button name="submit" class="header__search-btn"><img class="header__search-icon" src="img/search-icon.png" alt="icon for search"></button>
-                    <input type="text" name="search" value="" class="header__form-input" placeholder="Search">
-                </form>
+                <div class="header__form">
+                    <form action="#" method="POST" class="header__form-inline">
+                        <button name="submit" class="header__search-btn"><img class="header__search-icon" src="img/search-icon.png" alt="icon for search"></button>
+                        <input type="text" name="search" value="" class="header__form-input" placeholder="Search">
+                    </form>
+                </div>
                 <div class="header__account">
                     <a href="#"><img class="header__account-icon" src="img/account-icon.png" alt="icon for account"></a> 
                 </div>
@@ -43,13 +46,17 @@
     </header>
 
     <section class="get-deal">
-        <div class="container">    
-            <div class="get-deal__info">
-                <div class="get-deal__title wow slideInLeft" data-wow-duration="1s">BACK TO SCHOOL</div>
-                <div class="get-deal__subtitle wow slideInLeft" data-wow-duration="1s">SPECIAL 50% OFF</div>
-                <div class="get-deal__text wow slideInLeft" data-wow-duration="1s">For our student community</div>
-                <button type="submit" class="deal-btn wow slideInLeft" data-wow-duration="1s"><span class="deal-text">GET THE DEAL</span></button>
-                <img class="get-deal__icon wow slideInRight" data-wow-duration="1s" src="img/layer.png" alt="books and human">
+        <div class="container">  
+            <div class="get-deal__description"> 
+                <div class="get-deal__info">
+                    <div class="get-deal__title wow slideInLeft" data-wow-duration="1s">BACK TO SCHOOL</div>
+                    <div class="get-deal__subtitle wow slideInLeft" data-wow-duration="1s">SPECIAL 50% OFF</div>
+                    <div class="get-deal__text wow slideInLeft" data-wow-duration="1s">For our student community</div>
+                    <button type="submit" class="deal-btn wow slideInLeft" data-wow-duration="1s"><span class="deal-text">GET THE DEAL</span></button>
+                </div>
+                <div class="get-deal__background">
+                    <img class="get-deal__icon wow slideInRight" data-wow-duration="1s" src="img/layer.png" alt="books and human">
+                </div>
             </div>
         </div>
     </section>
@@ -134,32 +141,40 @@
                         <img class="preview-icon" src="img/man.png" alt="the man stay bag to us">
                     </div>
                 </div>
+        
                 <div class="eBook-preview__sprites-list wow slideInRight" data-wow-duration="1.5s">
-                    <div class="eBook-preview__sprites-icon">
-                        <i class="eBook-preview__sprite sprite-file"></i>
+                    <div class="eBook-preview__print">
+                        <div class="eBook-preview__sprites-icon">
+                            <i class="eBook-preview__sprite sprite-file"></i>
+                        </div>
+                        <div class="eBook-preview__text">
+                            <div class="eBook-preview__heading">Ready to print</div>
+                            <div class="eBook-preview__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt.</div>
+                        </div>
                     </div>
-                    <div class="eBook-preview__sprites-icon">
-                        <i class="eBook-preview__sprite sprite-open-book"></i>
+                    <div class="eBook-preview__read">
+                        <div class="eBook-preview__sprites-icon">
+                            <i class="eBook-preview__sprite sprite-open-book"></i>
+                        </div>
+                        <div class="eBook-preview__text">
+                            <div class="eBook-preview__heading">Easy to read</div>
+                            <div class="eBook-preview__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt.</div>
+                        </div>
                     </div>
-                    <div class="eBook-preview__sprites-icon">
-                        <i class="eBook-preview__sprite sprite-printer"></i>
-                    </div>
-                </div>
-                <div class="eBook-preview__sprites-describe wow slideInRight" data-wow-duration="1s">
-                    <div class="eBook-preview__text">
-                        <div class="eBook-preview__heading">Ready to print</div>
-                        <div class="eBook-preview__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt.</div>
-                    </div>
-                    <div class="eBook-preview__text">
-                        <div class="eBook-preview__heading">Easy to read</div>
-                        <div class="eBook-preview__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt.</div>
-                    </div>
-                    <div class="eBook-preview__text">
-                        <div class="eBook-preview__heading">Well organised</div>
-                        <div class="eBook-preview__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt.</div>
+                    <div class="eBook-preview__organised">
+                        <div class="eBook-preview__sprites-icon">
+                            <i class="eBook-preview__sprite sprite-printer"></i>
+                        </div>
+                        <div class="eBook-preview__text">
+                            <div class="eBook-preview__heading">Well organised</div>
+                            <div class="eBook-preview__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt.</div>
+                        </div> 
                     </div>
                 </div>
             </div>

@@ -12,7 +12,7 @@ $(document).ready(function(){
     speed: 1000,
     easing: 'linear',
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 2000,
     pauseOnHover: true,
     pauseOnDotsHover: true,
     draggable: false,
@@ -23,11 +23,17 @@ $(document).ready(function(){
     slidesPerRow: 1, 
     vertical: false,
     verticalSwiping: false,
-    responsive: [
+    responsive:[
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow:2
+        }
+      },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow:2,
+          slidesToShow:1
         }
       }
     ]

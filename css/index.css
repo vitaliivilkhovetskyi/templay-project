@@ -1,71 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins&display=swap');
 
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
-*,*:before,*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-:focus,:active {
-  outline: none;
-}
-a:focus, a:active {
-  outline: none;
-}
-
-nav, footer, header, aside, section {
-  display: block;
-}
-
-
-html, body {
-  height: 100%;
-  width: 100%;
-  font-size: 100%;
-  line-height: 1;
-  font-size: 14px;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-
-input, button, textarea {
-  font-family: inherit;
-}
-
-input::-ms-clear {
-  display: none;
-}
-button {
-  cursor: pointer;
-}
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-a,
-a:visited {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: none;
-}
-ul li {
-  list-style: none;
-}
-img {
-  vertical-align: top;
-}
-h1,h2,h3,h4,h5,h6 {
-  font-size: inherit;
-  font-weight: 400;
-}
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -74,8 +8,9 @@ body {
 }
 
 .container{
-    max-width: 1170px;
-    margin: auto;
+    max-width: 1280px;
+    margin: 0px auto;
+    padding: 0px 15px;
 }
 
 .line{
@@ -86,6 +21,7 @@ body {
     margin-bottom: 82px;
 }
 
+
 /*header*/
 header{
     background-color: #18133a;
@@ -94,6 +30,7 @@ header{
 .header__account-info {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .header__logo {
@@ -111,17 +48,24 @@ header{
     width: 100%;
 }
 
-.header__form-inline{
-    display: flex;
-    position: relative;
-    left: -55px;
-    min-width: 581px;
+.header__form{
+    max-width: 581px;
+    width: 100%;
     height: 51px;
+    
+}
+
+.header__form-inline{
+    position: relative;
+    width: 100%;
+    height: 100%;
     border-radius: 25px;
     border: 1px solid #8e819e;
 }
 
 .header__search-icon{
+    position: absolute;
+    top: 25%;
     margin: 0px 20px;
     border: none;
 }
@@ -132,26 +76,18 @@ header{
 }
 
 .header__form-input{
+    position: absolute;
+    top: 23%;
+    left: 10%;
     background: none;
     color: white;
     border: none;
     font-size: 16px;
-    height: 100%;
-    width: 100%;
 }
 
 .header__form-inline .header__form-input {
     border-bottom: none;
     border: none;
-}
-
-.header__account{
-    display: flex;
-    align-items: center;
-}
-
-.header__account-icon{
-    width: 100%;
 }
 
 .header__nav-bar{
@@ -207,7 +143,7 @@ header{
         -webkit-transform: rotate(45deg) translate(-8px, -8px);
         transform: rotate(45deg) translate(-8px, -8px);
     }  
-    
+
     .header input:checked ~ .header__nav-bar {
     display: flex;
     flex-direction: column;
@@ -217,13 +153,16 @@ header{
 
 
 /*get-deal*/
-.get-deal{
-    margin-bottom: -100px;
+.get-deal__description{
+    position: relative;
+    max-height: 1200px;
+    height: 100%;
 }
 
 .get-deal__info{
-    position: relative;
-    top: 140px;
+    position: absolute;
+    top: 27%;
+    left: 0%;
 }
 
 .get-deal__title{
@@ -239,8 +178,8 @@ header{
     font-size: 56px;
     font-weight: 700;
     color: #ffffff;
-    font-family: 'Montserrat - Bold';
-    margin-top: 26px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 0px 32px 0px;
     z-index: 1;
 }
 
@@ -248,22 +187,21 @@ header{
     position: relative;
     color: #bbafca;
     font-weight: 300;
-    font-style: normal;
     font-size: 28px;
-    font-weight: 300;
-    margin: 15px 0px 46px 0px;
     z-index: 1;
 }
 
 .deal-btn{
     position: relative;
-    min-width: 280px;
+    max-width: 280px;
+    width: 100%;
     height: 59px;
     border-radius: 29px;
     background-color: #12608e;
     background-image: linear-gradient(88deg, rgba(0, 227, 160, 0.8) 0%, rgba(0, 227, 160, 0.8) 1%, rgba(26, 90, 176, 0.8) 100%);
     text-decoration: none;
     border: none;
+    margin-top: 25px;
     z-index: 1;
 }
 
@@ -281,19 +219,16 @@ header{
     text-align: center;
 }
 
+
 .get-deal__icon{
-    max-width: 100%;
+    max-width: 776px;
+    width: 100%;
     position: relative;
-    left: 150px;
-    top: -320px;
+    left: 39%;
     z-index: 0;
 }
 
 /*get__book*/
-.get-book{
-    display: flex;
-    flex-direction: column;
-}
 
 .get-book__title{
     color: #ffffff;
@@ -374,13 +309,6 @@ header{
     background-position: -1812px -229px;
 }
 
-
-.sprite-icon-hand {
-    max-width: 302px;
-    height: 204px;
-    background-position: -1670px -123px;
-}
-
 .subblock-name{
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
@@ -392,10 +320,9 @@ header{
 }
 
 .subblock-text-info{
-    width: 190px;
-    height: 49px;
+    max-width: 190px;
+    height: 100%;
     color: #847893;
-    font-family: Montserrat;
     font-size: 12px;
     font-weight: 300;
     text-align: center;
@@ -407,14 +334,12 @@ header{
 }
 
 /*eBook-preview*/
-.eBook-preview{
-    text-align: center;
-}
 
 .eBook-preview__title {
     color: #ffffff;
     font-size: 36px;
     font-weight: 700;
+    text-align: center;
 }
 
 .eBook-preview__subtitle{
@@ -423,22 +348,14 @@ header{
     font-weight: 300;
     margin-top: 34px;
     margin-bottom: 59px;
+    text-align: center;
 }
 
 .eBook-preview__describe {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     position: relative;
-}
-
-.text-describe{
-    margin-left: -115px;
-}
-
-.sprites-list{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .eBook-preview__text-describe{
@@ -460,7 +377,7 @@ header{
 
 .eBook-preview__chapter{
     color: #b9acc9;
-    font-family: "Montserrat - Semi Bold";
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     margin: 23px 0px;
 }
@@ -477,9 +394,12 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    position: relative;
-    left: 4%;
-    
+}
+
+.eBook-preview__print, .eBook-preview__read, .eBook-preview__organised{
+    display: flex;
+    align-items: center;
+
 }
 
 .eBook-preview__sprites-icon{
@@ -532,36 +452,30 @@ header{
     background-position: -139px -869px;
 }
 
-
-.eBook-preview__sprites-describe{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+.eBook-preview__text{
+    position: relative;
+    left: 9%;
 }
 
 .eBook-preview__heading{
     color: #ffffff;
-    font-family: "Montserrat - Semi Bold";
+    font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     font-weight: 600;
     text-align: start;
 }
 
 .eBook-preview__description{
-    width: 250px;
-    height: 46px;
+    max-width: 250px;
+    min-height: 46px;
     color: #847893;
     font-size: 12px;
-    font-weight: 300;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    font-weight: 400;
     text-align: start;
     margin-top: 13px;
 }
 
-.eBook-preview__description::-webkit-scrollbar {
-    display: none;
-}
+
 
 /*clients-reviews*/
 
@@ -643,7 +557,7 @@ header{
 
 /*slider content*/
 .clients-reviews__andrei, .clients-reviews__vitalii, .clients-reviews__igor, .clients-reviews__vasya {
-    min-height: 450px;
+    max-height: 450px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -655,7 +569,7 @@ header{
 
 .clients-reviews__name{
     color: #ffffff;
-    font-family: "Montserrat - Semi Bold";
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
@@ -706,9 +620,8 @@ header{
 
 .result__amount{
     color: #ffffff;
-    font-family: "Montserrat - Semi Bold";
     font-size: 100px;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .result__sold-copies{
@@ -751,7 +664,7 @@ header{
 
 .result__background{
     position: relative;
-    left: 46.6%;
+    left: 43.4%;
     margin-top: -250px;
 }
 
@@ -824,6 +737,7 @@ header{
 .contacts__description{
     text-align: right;
     color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: 400;
     position: relative;
@@ -831,7 +745,7 @@ header{
 }
 
 .contacts__communication{
-    line-height: 34.1px;
+    line-height: 34px;
 }
 
 .phone, .email{
@@ -844,7 +758,7 @@ header{
 }
 
 .contacts__work-schedule{
-    line-height: 23.68px;
+    line-height: 24px;
 }
 
 .contacts__input-form {
@@ -891,7 +805,7 @@ header{
 
 input::placeholder { 
     color: white;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 textarea::placeholder { 
@@ -925,7 +839,7 @@ footer{
 .footer__nav-bar{
     display: flex;
     align-items: center;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .footer__nav-bar a{
