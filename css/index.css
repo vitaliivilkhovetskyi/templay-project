@@ -5,6 +5,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-image: linear-gradient(-109deg, #1f3563 0%, #16062a 100%);
     color: #ffffff;
+    padding: 10px;
 }
 
 .container{
@@ -403,26 +404,35 @@ header{
 }
 
 .eBook-preview__sprites-icon{
-    width: 177px;
-    height: 177px;
+    min-width: 177px;
+    min-height: 177px;
     background-color: #16062a;
     border-radius: 50%;
     position: relative;
 }
 
 .sprite-file{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     position: absolute;
     left: 30%;
     top: 26%;
 }
 
 .sprite-open-book{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     position: absolute;
     left: 26%;
     top: 22%;
 }
 
 .sprite-printer{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     position: absolute;
     left: 26%;
     top: 25%;
@@ -607,26 +617,33 @@ header{
 
 /*result*/
 .result{
-    height: 450px;
+    max-height: 450px;
+    height: 100%;
     background-image: linear-gradient(-246deg, rgba(82, 235, 183, 0.73) 0%, rgba(26, 90, 176, 0.73) 77%, rgba(26, 90, 176, 0.73) 100%);
 }
 
 .result__info{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 125px;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.result__amount{
+.result__description{
+    text-align: center;
+    position: relative;
+    left: 35%;
+    top: 140px;
+    z-index: 10;
+}
+
+.result__title{
     color: #ffffff;
     font-size: 100px;
     font-weight: 600;
 }
 
-.result__sold-copies{
+.result__subtitle{
     color: #fdfcff;
-    font-family: Montserrat;
     font-size: 18px;
     font-weight: 300;
     margin-bottom: 22px;
@@ -634,6 +651,7 @@ header{
 
 .result__social-network{
     display: flex;
+    justify-content: center;
 }
 
 .sprite-social-network {
@@ -664,12 +682,14 @@ header{
 
 .result__background{
     position: relative;
-    left: 43.4%;
-    margin-top: -250px;
+    left: 11%;
+    top: 10px;
+    z-index: 1;
 }
 
 .result__icon{
-    max-width: 502px;
+    max-width: 100%;
+    
 }
 
 /*buy-book*/
@@ -731,6 +751,7 @@ header{
 
 .contacts__info{
     display: flex;
+    flex-wrap: wrap;
     position: relative;
 }
 
@@ -822,6 +843,7 @@ footer{
 
 .footer__nav{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 57px;
 }
