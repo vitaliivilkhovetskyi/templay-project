@@ -25,13 +25,13 @@ $(document).ready(function(){
     verticalSwiping: false,
     responsive:[
       {
-        breakpoint: 1200,
+        breakpoint: 1024,
         settings: {
           slidesToShow:2
         }
       },
       {
-        breakpoint: 768,
+        breakpoint: 481,
         settings: {
           slidesToShow:1
         }
@@ -40,3 +40,15 @@ $(document).ready(function(){
   });
 });
 
+$( function () {
+  let result__title = 12000,
+  block = $( '.result__title' ),
+  interval = setInterval( function () {
+      result__title++;
+      block.text( result__title );
+      if( result__title === 12050 ) {
+      	clearInterval( interval );
+      }
+  	}, 5000 );
+  block.text( result__title );
+} );

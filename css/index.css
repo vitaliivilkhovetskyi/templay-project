@@ -11,7 +11,6 @@ body {
 .container{
     max-width: 1280px;
     margin: 0px auto;
-    padding: 0px 15px;
 }
 
 .line{
@@ -46,7 +45,7 @@ header{
 }
 
 .header__logo-icon{
-    width: 100%;
+    max-width: 15px;
 }
 
 .header__form{
@@ -78,8 +77,10 @@ header{
 
 .header__form-input{
     position: absolute;
-    top: 23%;
-    left: 10%;
+    top: 0;
+    left: 0;
+    margin-left: 50px;
+    margin-top: 13px;
     background: none;
     color: white;
     border: none;
@@ -110,12 +111,62 @@ header{
     border-bottom: 1px solid #1b8bcc;;
 }
 
+@media (min-width: 767px) and (max-width: 1024px) {
+    .header__account-info {
+    padding-top: 10px;
+    }
+    .header__form{
+        max-width: 350px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .header__account-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+    }
+    .header__logo{
+        align-self: flex-start;
+    }
+    .header__form{
+        max-width: 350px;
+        margin: 15px 0px;
+    }
+    .header__account{
+        align-self: flex-end;
+    }
+}
+@media (max-width: 480px) {
+    .header__account-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+    }
+    .header__logo{
+        align-self: flex-start;
+        position: relative;
+        top: 0;
+        margin-top: -22px;
+    }
+    .header__form{
+        max-width: 250px;
+        margin: 15px 0px;
+    }
+    .header__account{
+        align-self: flex-end;
+        order:-1;
+    }
+  
+}
+
 /* burger menu*/
 #burger-checkbox{
     display: none;
 }
-
-@media (max-width:767px){
+@media (max-width:480px){
     .header__nav-bar{
         display: none;
     }   
@@ -151,19 +202,11 @@ header{
     }
 }
 
-
-
 /*get-deal*/
-.get-deal__description{
-    position: relative;
-    max-height: 1200px;
-    height: 100%;
-}
 
 .get-deal__info{
-    position: absolute;
-    top: 27%;
-    left: 0%;
+    padding: 150px 0px;
+    position: relative;
 }
 
 .get-deal__title{
@@ -179,7 +222,6 @@ header{
     font-size: 56px;
     font-weight: 700;
     color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
     margin: 10px 0px 32px 0px;
     z-index: 1;
 }
@@ -220,13 +262,46 @@ header{
     text-align: center;
 }
 
-
 .get-deal__icon{
-    max-width: 776px;
-    width: 100%;
-    position: relative;
-    left: 39%;
+    max-width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: -30px;
+    margin-bottom: 50px;
     z-index: 0;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .get-deal__icon {
+        max-width: 650px;
+        margin-bottom: 70px;
+    } 
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+    .get-deal__info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0px 0px 0px;
+        text-align: center;
+    }
+    .get-deal__icon{
+        max-width: 70%;
+        position: relative;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .get-deal__info{
+        padding: 40px 0px 0px 0px;
+    }
+    .get-deal__icon{
+        display: none;
+    }
+  
 }
 
 /*get__book*/
@@ -249,9 +324,10 @@ header{
 
 .get-book__steps{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
+
 
 .get-book__background{
     width: 177px;
@@ -259,6 +335,7 @@ header{
     background-color: #16062a;
     border-radius: 50%;
     position: relative;
+    text-align: center;
 }
 
 .get-book__list-background{
@@ -312,7 +389,6 @@ header{
 
 .subblock-name{
     color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: 600;
     text-align: center;
@@ -332,6 +408,47 @@ header{
 .get-book__button{
     text-align: center;
     margin-top: 77px;
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+    .get-book__steps{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .get-book__info{
+        margin: 30px 40px 0px 40px;
+    }
+  
+}
+
+@media (min-width: 481px) and (max-width: 767px) { 
+    .get-book__steps{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .get-book__info{
+        margin: 30px 30px 20px 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .get-book__steps{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .get-book__info{
+        margin: 20px 20px 20px 20px;
+    }
+    .subblock-name {
+        font-size: 22px;
+        margin: 15px
+    }
+    .subblock-text-info{
+        font-size: 15px;
+    }
 }
 
 /*eBook-preview*/
@@ -378,17 +495,17 @@ header{
 
 .eBook-preview__chapter{
     color: #b9acc9;
-    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
-    margin: 23px 0px;
 }
 
 .eBook-preview__icon{
-    width: 211px;
-    height: 325px;
+    max-width: 211px;
+    max-height: 325px;
     position: absolute;
-    top: 60%;
-    left: 87%;
+    bottom: 0%;
+    right: 0%;
+    margin-right: -150px;
+    margin-bottom: -110px;
 }
 
 .eBook-preview__sprites-list{
@@ -400,7 +517,6 @@ header{
 .eBook-preview__print, .eBook-preview__read, .eBook-preview__organised{
     display: flex;
     align-items: center;
-
 }
 
 .eBook-preview__sprites-icon{
@@ -485,7 +601,67 @@ header{
     margin-top: 13px;
 }
 
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .eBook-preview__text-describe {
+        width: 370px;
+    }
+    .eBook-preview__describe-preview{
+        font-size: 12px;
+    }
+    .eBook-preview__chapter{
+        font-size: 16px;
+    }
+}
 
+@media (min-width: 767px) and (max-width: 1024px) {
+    .eBook-preview__describe {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .eBook-preview__print{
+        margin: 40px 0px;
+    }
+    .eBook-preview__organised{
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .eBook-preview__text-describe {
+        max-width: 330px;
+    }
+    .eBook-preview__print{
+        margin: 40px 0px;
+    }
+    .eBook-preview__organised{
+        margin-top: 30px;
+    }
+        .eBook-preview__describe-preview{
+        font-size: 11px;
+    }
+    .eBook-preview__chapter{
+        font-size: 14px;
+    }
+}
+@media (max-width: 480px) {
+    .eBook-preview__describe{
+        margin: 0px 25px;
+    }
+    .eBook-preview__icon{
+        display: none;
+    }
+    .eBook-preview__print, .eBook-preview__read, .eBook-preview__organised{
+        display: flex;
+        flex-direction: column;     
+    }
+    .eBook-preview__print{
+        margin: 20px 0px;
+    }
+    .eBook-preview__organised{
+        margin-top:15px;
+    }
+}
 
 /*clients-reviews*/
 
@@ -523,6 +699,7 @@ header{
 .slider{
     position: relative;
 }
+
 .slider .slick-arrow{
     position: absolute;
     top: 50%;
@@ -599,7 +776,7 @@ header{
     font-size: 12px;
     font-weight: 400;
     margin-top: 36px;
-    margin-bottom: 63px;
+    margin-bottom: 33px;
     letter-spacing: 1.2px;
     line-height: 18px;
     position: relative;
@@ -617,41 +794,37 @@ header{
 
 /*result*/
 .result{
-    max-height: 450px;
-    height: 100%;
     background-image: linear-gradient(-246deg, rgba(82, 235, 183, 0.73) 0%, rgba(26, 90, 176, 0.73) 77%, rgba(26, 90, 176, 0.73) 100%);
+    position: relative;
 }
 
 .result__info{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.result__description{
     text-align: center;
-    position: relative;
-    left: 35%;
-    top: 140px;
-    z-index: 10;
+    padding: 190px 0;
 }
 
 .result__title{
+    position: relative;
     color: #ffffff;
     font-size: 100px;
     font-weight: 600;
+    z-index: 5;
 }
 
 .result__subtitle{
+    position: relative;
     color: #fdfcff;
     font-size: 18px;
     font-weight: 300;
     margin-bottom: 22px;
+    z-index: 5;
 }
 
 .result__social-network{
     display: flex;
     justify-content: center;
+    position: relative;
+    z-index: 5;
 }
 
 .sprite-social-network {
@@ -680,43 +853,62 @@ header{
     background-position: -283px -47px;
 }
 
-.result__background{
-    position: relative;
-    left: 11%;
-    top: 10px;
-    z-index: 1;
-}
-
 .result__icon{
     max-width: 100%;
-    
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 2.5%;
+    z-index: 0;
+
+}
+
+@media (max-width: 1280px) {
+    .result__info{
+        padding: 80px 0px;
+    }
+    .result__icon{
+        display: none;
+    } 
+}
+
+@media (max-width: 319px) {
+    .result__icon{
+        display: none;
+    } 
+    .result__title{
+        font-size: 50px;
+    }
+    .result__subtitle{
+        font-size: 14px;
+    }
 }
 
 /*buy-book*/
-
-.buy-book {
-    display: flex;
-    justify-content: center;
-    margin-top: 120px;
-    position: relative;
-}
-
-.buy-book__icon{
-    position: relative;
-    left: -120px;
-}
-
 .buy-book__description {
-    min-width: 606px;
-    position: relative;
-    top: 130px;
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.buy-book__img{
+   position: relative;
+   left: 0;
+   top: 0;
+   margin-left: -150px;
+   margin-top: 40px;
+}
+
+.buy-book__info{
+    max-width: 600px; 
 }
 
 .buy-book__quote{
     color: #ffffff;
     font-size: 30px;
     font-weight: 700;
+    text-align: center;
 }
 
 .buy-book__text{
@@ -725,6 +917,7 @@ header{
     color: #8e819e;
     margin-top: 23px;
     margin-bottom: 27px;
+    text-align: center;
 }
 
 .buy-book__author{
@@ -732,6 +925,33 @@ header{
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 43px;
+    text-align: center;
+}
+
+.buy-book__btn{
+    text-align: center;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .buy-book__description {
+        display: flex;
+        flex-direction: column;
+    }
+    .buy-book__img{
+        position: relative;
+        left: 30%;
+        width: 80%;
+        padding: 50px 0px;
+    } 
+}
+
+@media (max-width: 1024px) {
+    .buy-book__background{
+        display: none;
+    }
+    .buy-book__info{
+        padding: 50px 0px;
+    }
 }
 
 /*contacts*/
@@ -740,6 +960,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .contacts__name{
@@ -758,8 +979,7 @@ header{
 .contacts__description{
     text-align: right;
     color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
     position: relative;
     left: -50px;
@@ -785,7 +1005,6 @@ header{
 .contacts__input-form {
     display: flex;
     flex-direction: column;
-    justify-self: center;
     position: relative;
     left: 35px;
 }
@@ -834,6 +1053,63 @@ textarea::placeholder {
     font-size: 18px;
 }
 
+@media (min-width: 767px) and (max-width: 1024px) {
+    .contacts__communication, .contacts__location, .contacts__work-schedule{
+        font-size: 16px;
+    }
+    .contacts__description {
+        position: relative;
+        left: -10px;
+    }
+    .contacts__input-form {
+        position: relative;
+        left: 15px;
+    }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+    .contacts__info{
+        justify-content: center;
+    }
+    .contacts__description {
+        position: relative;
+        left: 0px;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .contacts__input-form {
+        position: relative;
+        left: 0px;
+    }
+    .contacts__button{
+        align-self: center;
+    }
+}
+@media (max-width: 480px) {
+    .contacts__communication, .contacts__location, .contacts__work-schedule{
+        font-size: 14px;
+    }
+    .contacts__info{
+        justify-content: center;
+    }
+    .contacts__description {
+        position: relative;
+        left: 0px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .contacts__input-form {
+        position: relative;
+        left: 0px;
+    }
+    .contacts__button{
+        align-self: center;
+    }
+    .contacts__input-name, .contacts__input-email, .contacts__input-comment{
+        width: 250px;
+    }
+  
+  
+}
 /*footer*/
 
 footer{
@@ -910,11 +1186,45 @@ footer{
     margin: 0px 22px;
 }
 
-.footer__copyright{
+.footer__reserved-copyright{
     text-align: center;
     margin-top: 63px;
     padding-bottom: 47px;
 }
+
+@media (min-width: 767px) and (max-width: 1024px) and (orientation: landscape) {
+    .footer__logo{
+        display: none;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+    .footer__nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 57px;
+    } 
+    .footer__nav-bar{
+        margin: 20px 0px;
+    }
+}
+
+@media (max-width: 480px) {
+  
+    .footer__nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 57px;
+    } 
+    .footer__nav-bar{
+        flex-direction: column;
+        margin: 20px 0px;
+    }
+}
+  
 
 
 
